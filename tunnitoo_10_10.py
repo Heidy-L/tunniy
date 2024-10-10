@@ -1,4 +1,5 @@
 """Matemaatilised tehted"""
+import math
 
 # tingimuslaused if ja else töötavad ainult andmetüübiga bool(ean)
 
@@ -36,11 +37,18 @@ print(bool(0))
 # ruutvõrrand lahendatakse kordajate a, b, c abil, ruutvõrrandi lahendivalemi järgi
 
 # koosta muutuja a, lisa võimalus kasutajal sisestada arv, muuda see täisarvuks
-
+a = int(input("Sisesta oma a:"))
 # koosta muutuja b, lisa võimalus kasutajal sisestada arv, muuda see täisarvuks
-
+b = int(input("Sisesta oma b:"))
 # koosta muutuja c, lisa võimalus kasutajal sisestada arv, muuda see täisarvuks
-
+c = int(input("Sisesta oma c:"))
 # ruutvõrrandil on tavaliselt 2 lahendit või lahendid puuduvad,
+diskriminant = (b ** 2) - (4 * a * c)
+if diskriminant < 0:
+    print("lahendid puuduvad")
+else:
+    Lahend1 = (-b +math.sqrt(diskriminant)) / (2 * a)
+    Lahend2 = (-b -math.sqrt(diskriminant)) / (2 * a)
 # kuidas saaks kohe üelda kasutajale, et lahendid puuduvad, kuidas neid leida
 # kuidas võiks nimetada muutujaid
+
